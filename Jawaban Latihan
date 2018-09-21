@@ -1,0 +1,43 @@
+//ARVIN RADITYA NIARDI
+//1606874545
+
+//LATIHAN PROJECT VIRAL
+1.
+	a. Tidak terjadi compile error
+	b. terjadi error white label karena url/path telah diganti menjadi "/viral2jari" sehingga jika ingin membuka url di browser harus diganti menjadi http://localhost:8080/viral2jari
+	c. Untuk menentukan url/path
+
+2. 
+	a. Tidak
+	b. Tidak karena hanya mengganti nama method bukan mengganti url/path
+
+3. 
+	a. Ya
+	b. Error karena return berfungsi untuk memanggil template html sedangkan template html yang telah dibuat sebelumnya bernama viral.html dan tidak ada template viral2jari.html
+	c. Untuk memanggil template viral.html
+
+//LATIHAN REQUEST PARAMETER
+1. Karena "In My Feeling" akan selalu digantikan oleh isi dari th:text yang merupakan format dari thymeleaf
+sumber:
+https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#using-thtext-and-externalizing-text
+
+2. Terjadi error karena url/path diubah menjadi /viral/challenge sedangkan kita tetap memanggil url/path dengan /challenge?name=kiki
+
+3. 
+	a. Terjadi error karena ketika kita membuka dengan url localhost:8080/challenge maka kita tidak memasukkan parameter apapun padahal method challenge memerlukan parameter
+
+	b. Url bisa dibuka karena method tidak diharuskan memiliki parameter(required=false) sehingga parameter null dan tulisan menjadi "null do you love me?"
+
+	c. Url bisa dibuka karena method tidak diharuskan memiliki parameter(required=false) namun parameter akan di set sesuai default yaitu "kiki" sehingga tulisan menjadi "kiki do you love me?
+
+
+//LATIHAN PATH VARIABEL
+1. Terjadi error karena tidak ada url/path tersebut
+2. Error terjadi ambiguitas karena terdapat fungsi pada step sebelum sebelumnya yang merujuk pada path /challenge/
+3. Menampilkan halaman yang berisi :
+kiki do you love me?
+
+Are you riding?
+
+
+
